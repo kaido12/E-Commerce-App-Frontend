@@ -209,7 +209,27 @@ a {
 .product-card {
   padding: 15px;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
-  border-radius: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-card .product-image {
+  height: 150px;
+}
+
+.product-card .product-image img {
+  object-fit: contain;
+}
+.product-card .product-image > img:last-child {
+  display: none;
+}
+
+.product-card:hover .product-image > img:nth-child(1) {
+  display: none;
+}
+
+.product-card:hover .product-image > img:last-child {
+  display: flex;
 }
 
 .product-card .product-details h6 {
@@ -225,4 +245,19 @@ a {
 .product-card .product-details p {
   font-size: 15px;
   color: var(--color-price);
+}
+
+.side-bar {
+  top: 14%;
+  right: -23px;
+  transition: 0.4s;
+}
+
+.product-card:hover .side-bar {
+  right: 10px;
+}
+
+.wishlist-icon {
+  top: 2%;
+  right: 11px;
 }

@@ -256,7 +256,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="blog-wrapper home-wrapper-2 py-5 px-5">
+      <section className="products-wrapper home-wrapper-2 py-5 px-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
