@@ -17,8 +17,8 @@ const ProductCard = () => {
               </Link>
             </div>
             <div className="product-image d-flex align-items-center justify-content-center">
-              <img src="./images/product_02.png" height={110} alt="product" />
               <img src="./images/product_01.png" height={110} alt="product" />
+              <img src="./images/product_02.png" height={110} alt="product" />
             </div>
             <div className="product-details">
               <h6 className="brand">Sony</h6>              

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
+import SpecialCard from "../components/SpecialCard";
 
 const Home = () => {
   return (
@@ -216,6 +217,38 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>      
+      <section className="products-wrapper home-wrapper-2 py-5 px-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">FEATURED COLLECTION</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="special-wrapper home-wrapper-3 py-5 px-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialCard />
+            <SpecialCard />
+            <SpecialCard />
+            <SpecialCard />
+            <SpecialCard />
+            <SpecialCard />
+          </div>
+        </div>
       </section>
       <section className="marquee-wrapper py-5 px-5">
         <div className="container-xxl">
@@ -253,21 +286,6 @@ const Home = () => {
               </Marquee>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="products-wrapper home-wrapper-2 py-5 px-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <h3 className="section-heading">FEATURED COLLECTION</h3>
-            </div>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
           </div>
         </div>
       </section>

@@ -11,8 +11,8 @@
   --color-search: #DFFF00;
   --color-tertiary: #4b145b;
   --color-top-bottom: #6c0239;
-  --color-gray: #e5e5e7;
-  --color-light: #eeeeee;
+  --color-gray: #e8e8e9;
+  --color-light: #efefef;
   --color-price: #1c1c1b;
 }
 
@@ -39,6 +39,9 @@ a {
 }
 .yellow-300{
   color: #FFF176;
+}
+.red-400{
+  color: #F43336;
 }
 .card-wrapper {
   background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );;
@@ -208,7 +211,7 @@ a {
 /* Product Card */
 .product-card {
   padding: 15px;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(249, 234, 238, 0.67) 0.1%, rgba(251, 239, 249, 0.63) 90.1% );
   border-radius: 15px;
   overflow: hidden;
 }
@@ -260,4 +263,11 @@ a {
 .wishlist-icon {
   top: 2%;
   right: 11px;
+}
+
+/* Special Product Card */
+.special-product-card {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
 }
