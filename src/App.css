@@ -14,6 +14,7 @@
   --color-gray: #e8e8e9;
   --color-light: #efefef;
   --color-price: #1c1c1b;
+  --color-green: #0bda51;
 }
 
 body {
@@ -311,4 +312,41 @@ a {
   line-height: 24px;
   font-weight: 200px;
   color: white;
+}
+
+/* Store Section */
+.filter-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.filter-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-price);
+  margin-bottom: 20px;
+}
+
+.filter-card ul, .filter-card .form-check-label {
+  list-style-type:none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-dark-gray);
+  cursor: pointer;
+}
+.filter-card .form-check-input:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0, 0.25);
+}
+.filter-card .form-check-input:checked {
+  background-color: var(--color-green);
+  border-color: var(--color-green)
+}
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-price);
+  margin-bottom: 15px;
 }
