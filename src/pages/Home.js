@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
+import PopularCard from "../components/PopularCard";
 import SpecialCard from "../components/SpecialCard";
 
 const Home = () => {
@@ -232,7 +233,7 @@ const Home = () => {
             <ProductCard />
           </div>
         </div>
-      </section>
+      </section>      
       <section className="special-wrapper home-wrapper-3 py-5 px-5">
         <div className="container-xxl">
           <div className="row">
@@ -244,9 +245,56 @@ const Home = () => {
             <SpecialCard />
             <SpecialCard />
             <SpecialCard />
-            <SpecialCard />
-            <SpecialCard />
-            <SpecialCard />
+            <SpecialCard />        
+          </div>
+        </div>
+      </section>
+      <section className="smart-wrapper home-wrapper-2 py-5 px-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Apple Delights</h3>
+            </div>
+            <div className="col-3">
+              <div className="smart-card position-relative">
+                <img src="./images/apple-series-8.jpg" className="img-fluid" width={300} alt="smart" />
+                <div className="smart-content position-absolute">
+                  <h5>Water Resistant</h5>
+                  <h6>Series 8</h6>
+                  <p>₹49999</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="smart-card position-relative">
+                <img src="./images/apple-iphone-14.jpg" className="img-fluid" width={300} alt="smart" />
+                <div className="smart-content position-absolute">
+                  <h5 className="text-dark">AI Camera</h5>
+                  <h6 className="text-dark">Iphone 14 </h6>
+                  <p className="text-dark">₹109999</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="smart-card position-relative">
+                <img src="./images/apple-homepod-mini.jpg" className="img-fluid" width={300} alt="smart" />
+                <div className="smart-content position-absolute">
+                  <h5>Dolby Atmos</h5>
+                  <h6>Homepod Mini</h6>
+                  <p>₹38999</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="smart-card position-relative">
+                <img src="./images/apple-macbook-pro.jpg" className="img-fluid" width={300} alt="smart" />
+                <div className="smart-content position-absolute">
+                  <h5 className="text-dark">Powerful Processor</h5>
+                  <h6 className="text-dark">Macbook Pro</h6>
+                  <p className="text-dark">₹159999</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -256,36 +304,50 @@ const Home = () => {
             <div className="col-12">
               <div className="marquee-inner-wrapper card-wrapper">
               <Marquee gradient={false} className="d-flex">
-                <div className="mx-2 w-30">
-                  <img width={90} height={70} src="./images/brand_01.png" alt="brand" />
+                <div className="mx-3 w-30">
+                  <img height={40} src="./images/brand_01.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_02.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={90} src="./images/brand_02.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_03.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={90} src="./images/brand_03.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_04.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={60} src="./images/brand_04.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_05.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={60} src="./images/brand_05.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_06.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={30} src="./images/brand_06.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_07.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={90} src="./images/brand_07.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_08.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={60} src="./images/brand_08.png" alt="brand" />
                 </div>
-                <div className="mx-2 w-25">
-                  <img width={90} height={70} src="./images/brand_09.png" alt="brand" />
+                <div className="mx-3 w-25">
+                  <img height={80} src="./images/brand_09.png" alt="brand" />
                 </div>
               </Marquee>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper home-wrapper-2 py-5 px-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Popular Products</h3>
+            </div>
+            <PopularCard />
+            <PopularCard />
+            <PopularCard />
+            <PopularCard />
+            
           </div>
         </div>
       </section>

@@ -267,16 +267,48 @@ a {
 
 /* Special Product Card */
 .special-product-card {
-  padding: 15px;
+  padding: 20px 10px;
   border-radius: 5px;
   background-color: white;
 }
 
 .special-product-content {
-  padding-left: 2.5rem;
+  padding-left: 8px;
 }
 
 .special-product-content h5 {
   color: var(--color-main);
   font-size: 14px;
+}
+
+/* Smart Product Card */
+.smart-card .smart-content {
+  top: 10%;
+  left: 10%;
+}
+
+.smart-card img {
+  border-radius: 10px;
+}
+
+.smart-content h5 {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400px;
+  color: white;
+  margin-bottom: 7px;
+}
+
+.smart-content h6 {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500px;
+  color: white;
+}
+
+.smart-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 200px;
+  color: white;
 }

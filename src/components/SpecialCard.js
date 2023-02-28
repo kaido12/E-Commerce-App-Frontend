@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const SpecialCard = () => {
   return (
-    <div className='col-4'>
+    <div className='col-6'>
         <div className="special-product-card mb-4">
             <div className="d-flex justify-content-between">
                 <div>
-                    <img src="./images/bose.jpg" alt="specialproduct" />
+                    <img src="./images/bose.jpg" width={200} alt="specialproduct" />
                 </div>
                 <div className="special-product-content d-flex flex-column">
                     <h5 className="brand">Bose</h5>
