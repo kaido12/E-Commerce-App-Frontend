@@ -183,7 +183,7 @@ const Store = () => {
                   </div>
                   <div className="random-product d-flex">
                     <div className="image-width-1">
-                      <img src="images/bike.jpg" height={30} className="img-fluid px-2" alt="bike" />
+                      <img src="images/bike.jpg" height={50} className="img-fluid px-2" alt="bike" />
                     </div>
                     <div className="w-50">
                       <h7 className="fw-bold">HRX Xtrm CT 500</h7>
