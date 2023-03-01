@@ -317,7 +317,7 @@ a {
 /* Store Section */
 .filter-card {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 15px 15px 25px;
 }
 
@@ -370,3 +370,17 @@ a {
 .random-product:nth-child(1), .random-product:nth-child(2) {
   border-bottom: 1px solid var(--color-gray);
 } 
+
+.filter-sort-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.grid-img img {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-light);
+  padding: 8px;
+  border-radius: 5px;
+}
