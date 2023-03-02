@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = ({grid}) => {
+
+  let location = useLocation();
+
 
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
 
   return (
-    <div className='col-2'>
+    <div className={`${location.pathname == "/store" ? `col-${grid}`:"col-3"}`}>
         <div className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
               <Link>
