@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
-import ProductCard from "../components/ProductCard";
+import ProdBlock from "../components/ProdBlock";
 import PopularCard from "../components/PopularCard";
 import SpecialCard from "../components/SpecialCard";
 
@@ -225,12 +225,12 @@ const Home = () => {
             <div className="col-12">
               <h3 className="section-heading">FEATURED COLLECTION</h3>
             </div>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProdBlock />
+            <ProdBlock />
+            <ProdBlock />
+            <ProdBlock />
+            <ProdBlock />
+            <ProdBlock />
           </div>
         </div>
       </section>      

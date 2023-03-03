@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 
-const ProductCard = ({grid}) => {
-
-  let location = useLocation();
-
+const ProdBlock = () => {
 
   const ratingChanged = (newRating) => {
     console.log(newRating);
@@ -14,16 +10,16 @@ const ProductCard = ({grid}) => {
 
   return (
     <>
-      <div className={`${location.pathname === "/store" ? `col-${grid}`: "col-2"}`}>
+      <div className= "col-2">
           <div className="product-card position-relative">
               <div className="wishlist-icon position-absolute">
                 <Link>
                   <img src="./images/wish.svg" alt="wishlist" />
                 </Link>
               </div>
-              <div className="product-image d-flex align-items-center justify-content-center">
-                <img src="./images/product_01.png" alt="product" />
-                <img src="./images/product_02.png" alt="product" />
+              <div className="product-image-block d-flex align-items-center justify-content-center">
+                <img src="./images/product_01.png" height={110} alt="product" />
+                <img src="./images/product_02.png" height={110} alt="product" />
               </div>
               <div className="product-details">
                 <h6 className="brand">Sony</h6>              
@@ -36,12 +32,7 @@ const ProductCard = ({grid}) => {
                   isHalf={true}
                   //edit={false}
                   activeColor="#ffd700"
-                />
-                <p className={`description ${(grid === 12) || (grid === 6)? "d-block" : "d-none"}`}>
-                  Oit omnis ducimus repellat earum possimus culpa fugit laudantium esse voluptat.
-                  Natus explicabo corporis quaerat ut odit saepe dignissimos, earum possimus et.
-                  Quia non adipisci voluptates architecto.
-                </p> 
+                /> 
                 <p className='price'>₹5000</p>
               </div>
               <div className="side-bar position-absolute">
@@ -63,4 +54,4 @@ const ProductCard = ({grid}) => {
   )
 }
 
-export default ProductCard;
+export default ProdBlock;

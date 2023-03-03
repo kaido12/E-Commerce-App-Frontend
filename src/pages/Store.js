@@ -273,8 +273,8 @@ const Store = () => {
                     </select>
                   </div>
                   <div className="d-flex align-items-center gap-10 ">
-                    <p className="totalproducts mb-0">30 Products</p>
-                    <div className="d-flex gap-10 align-items-center grid-img">
+                    <p className="totalproducts mb-0 me-2">30 Products</p>
+                    <div className="d-flex gap-15 align-items-center grid-img">
                       <img
                         onClick={() => setGrid(12)}
                         src="./images/gr.svg"
@@ -282,19 +282,19 @@ const Store = () => {
                         className="d-block img-fluid"
                       />
                       <img
-                        onClick={() => setGrid(2)}
+                        onClick={() => setGrid(6)}
                         src="./images/gr2.svg"
                         alt=""
                         className="d-block img-fluid"
                       />
                       <img
-                        onClick={() => setGrid(3)}
+                        onClick={() => setGrid(4)}
                         src="./images/gr3.svg"
                         alt=""
                         className="d-block img-fluid"
                       />
                       <img
-                        onClick={() => setGrid(4)}
+                        onClick={() => setGrid(3)}
                         src="./images/gr4.svg"
                         alt=""
                         className="d-block img-fluid me-1"
@@ -304,7 +304,14 @@ const Store = () => {
                 </div>
               </div>
               <div className="products-list pb-5">
+                <div className="d-flex flex-wrap">
                 <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+                <ProductCard grid={grid} />
+                </div>
               </div>
             </div>
           </div>
