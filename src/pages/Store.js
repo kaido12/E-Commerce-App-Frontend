@@ -9,7 +9,7 @@ const Store = () => {
   return (
     <>
       <BreadCrumb title="Store" />
-      <div className="store-wrapper home-wrapper-2 py-5 px-5">
+      <div className="store-wrapper home-wrapper-3 py-5 px-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
