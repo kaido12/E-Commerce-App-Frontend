@@ -12,6 +12,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-12">
               <iframe
+                title="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18671.635865381366!2d78.02050811638078!3d30.321190646116346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1677862974679!5m2!1sen!2sin"
                 width="600"
                 height="450"

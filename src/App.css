@@ -462,3 +462,29 @@ a {
   color: var(--color-dark-gray);
 }
 
+/* COMPARE PRODUCTS PAGE */
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+.compare-product-card .cross {
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  width: 25px;
+  padding: 3px;
+}
+
+.compare-product-details h5.title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-price);
+}
+.compare-product-details h6.price {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-dark-price);
+}
