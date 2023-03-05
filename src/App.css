@@ -38,6 +38,9 @@ a {
 .gap-15 {
   gap: 15px;
 }
+.gap-20 {
+  gap: 20px;
+}
 .gap-30 {
   gap: 30px;
 }
@@ -47,6 +50,7 @@ a {
 .red-400{
   color: #F43336;
 }
+
 .card-wrapper {
   background-color: #fafaff;
   background-image: linear-gradient(334deg, #fafaff 0%, #f0f0f0 66%, #ffffff 100%);
@@ -376,11 +380,11 @@ a {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 }
 .colours li {
   width: 20px;
   height: 20px;
+  margin: 0px 4px;
   background-color: red;
   border-radius: 50%;
 }
@@ -463,6 +467,7 @@ a {
 }
 
 /* COMPARE PRODUCTS PAGE */
+
 .compare-product-card {
   padding: 20px 15px;
   background-color: white;
@@ -486,5 +491,43 @@ a {
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
-  color: var(--color-dark-price);
+  color: var(--color-dark-gray)
+}
+.compare-product-details .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid var(--color-gray);
+}
+
+.compare-product-details .product-detail p {
+  color: var(--color-dark-gray);
+}
+
+/* WISHLIST PAGE */
+
+.wishlist-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+.wishlist-card .cross {
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  width: 25px;
+  padding: 3px;
+}
+.wishlist-details h5.title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-price);
+}
+.wishlist-details h6.price {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-dark-gray)
 }

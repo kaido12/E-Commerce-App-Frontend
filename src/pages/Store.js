@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
+import Colour from "../components/Colour";
 
 const Store = () => {
   const [grid, setGrid] = useState(4);
@@ -64,41 +65,11 @@ const Store = () => {
                     </div>
                   </div>
                   <h5 className="sub-title">Colour</h5>
-                  <div>
-                    <ul className="colours ps-0">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                  <div className="d-flex flex-wrap">
+                    <Colour />
+                    <Colour />
+                    <Colour />
+                    <Colour />                    
                   </div>
                   <h5 className="sub-title">Size</h5>
                   <div>
