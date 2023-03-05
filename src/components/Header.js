@@ -71,10 +71,10 @@ const Header = () => {
                 </div>
                 <div>
                   <Link 
-                    to="/login"
+                    to="/signin"
                     className="d-flex align-items-center gap-10 text-white">
                     <img src="./images/user.svg " alt="user" />
-                    <p className="mb-0">Login</p>
+                    <p className="mb-0">Sign In</p>
                   </Link>
                 </div>
                 <div>
