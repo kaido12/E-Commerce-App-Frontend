@@ -542,7 +542,7 @@ a {
   color: var(--color-dark-gray)
 }
 
-/* SIGN IN PAGE / SIGN UP PAGE */
+/* SIGN IN PAGE / SIGN UP PAGE / FORGOT PASSWORD PAGE */
 
 .auth-card {
   padding: 30px 20px;
@@ -574,16 +574,13 @@ a {
   font-weight: 400;
   color: var(--color-price);
 }
-
-
-.auth-card .signup {
+.signup {
   background-color: var(--color-mustard);
   padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
 }
-
 .signup:hover {
   background-color: #ecb101;
 }
-.bttn:hover {
-  background-color: #0e028fcb;
-}
+

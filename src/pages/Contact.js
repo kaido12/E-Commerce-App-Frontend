@@ -43,15 +43,14 @@ const Contact = () => {
                     <div className="">
                       <textarea
                         className="w-100 form-control"
-                        name=""
-                        id=""
+                        name=""                        
                         cols="30"
                         rows="4"
                         placeholder="Comment"
                       ></textarea>
                     </div>
                     <div>
-                      <button className="bttn text-white rounded-5 border-0">Submit</button>
+                      <button type="submit" className="bttn text-white rounded-5 border-0">Submit</button>
                     </div>
                   </form>
                 </div>
