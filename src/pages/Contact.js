@@ -51,7 +51,7 @@ const Contact = () => {
                       ></textarea>
                     </div>
                     <div>
-                      <button className="btn btn-danger rounded-5 border-0">Submit</button>
+                      <button className="bttn text-white rounded-5 border-0">Submit</button>
                     </div>
                   </form>
                 </div>

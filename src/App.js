@@ -8,6 +8,9 @@ import Store from "./pages/Store";
 import Blog from "./pages/Blog";
 import CompareProducts from "./pages/CompareProducts";
 import Wishlist from "./pages/Wishlist";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import ForgotPassword from "./pages/ForgotPassword";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
             <Route  path="/blog" element={<Blog />} />
             <Route  path="/compare-products" element={<CompareProducts />} />
             <Route  path="/wishlist" element={<Wishlist />} />
+            <Route  path="/signin" element={<SignIn />} />
+            <Route  path="/signup" element={<SignUp />} />
+            <Route  path="/forgot-password" element={<ForgotPassword />} />
           </Route>
         </Routes>
       </BrowserRouter>
