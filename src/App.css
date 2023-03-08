@@ -226,6 +226,20 @@ a {
   line-height: 22px;
   color: var(--color-dark-gray);
 }
+.single-blog-card a {
+  font-size: 18px;
+  color: var(--color-dark-gray);
+  margin-bottom: 20px;
+}
+.single-blog-card h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-price);
+}
+.single-blog-card p {
+  color: var(--color-dark-gray);
+  font-size: 14px;
+}
 
 /* Product Card */
 .product-card {
@@ -584,3 +598,8 @@ a {
   background-color: #ecb101;
 }
 
+/* POLICY PAGES */
+.policy {
+  background-color: white;
+  padding: 30px;
+}

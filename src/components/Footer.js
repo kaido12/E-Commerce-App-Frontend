@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {BsGithub, BsYoutube, BsLinkedin, BsInstagram} from "react-icons/bs"
+import { BsGithub, BsYoutube, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -65,16 +65,16 @@ const Footer = () => {
                 </a>
                 <div className="social_media_icons d-flex align-items-center gap-30">
                   <a className="yellow-300">
-                    <BsGithub className="fs-5"/>
+                    <BsGithub className="fs-5" />
                   </a>
                   <a className="yellow-300">
-                   <BsYoutube className="fs-5"/>
+                    <BsYoutube className="fs-5" />
                   </a>
                   <a className="yellow-300">
-                    <BsInstagram className="fs-5"/>
+                    <BsInstagram className="fs-5" />
                   </a>
                   <a className="yellow-300">
-                    <BsLinkedin className="fs-5"/>
+                    <BsLinkedin className="fs-5" />
                   </a>
                 </div>
               </div>
@@ -91,11 +91,11 @@ const Footer = () => {
             <div className="col-3">
               <h4 className="text-white">Information</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1">Blogs</Link>
-                <Link className="text-white py-2 mb-1">Privacy Policy</Link>
-                <Link className="text-white py-2 mb-1">Refund Policy</Link>
-                <Link className="text-white py-2 mb-1">Shipping Policy</Link>
-                <Link className="text-white py-2 mb-1">
+                <Link to="/blog" className="text-white py-2 mb-1">Blogs</Link>
+                <Link to="/privacy-policy" className="text-white py-2 mb-1">Privacy Policy</Link>
+                <Link to="/refund-policy" className="text-white py-2 mb-1">Refund Policy</Link>
+                <Link to="/shipping-policy" className="text-white py-2 mb-1">Shipping Policy</Link>
+                <Link to="/terms-and-conditions" className="text-white py-2 mb-1">
                   Terms and Conditions
                 </Link>
               </div>
