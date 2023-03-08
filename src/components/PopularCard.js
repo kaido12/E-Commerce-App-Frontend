@@ -10,7 +10,7 @@ const ProductCard = () => {
 
   return (
     <div className='col-3'>
-        <div className="product-card position-relative">
+        <Link to='/store/:id' className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
               <Link>
                 <img src="./images/wish.svg" alt="wishlist" />
@@ -47,7 +47,7 @@ const ProductCard = () => {
                 </Link>
               </div>
             </div>
-        </div>
+        </Link>
     </div>
   )
 }

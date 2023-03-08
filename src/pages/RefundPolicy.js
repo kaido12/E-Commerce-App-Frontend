@@ -20,4 +20,4 @@ const RefundPolicy = () => {
   )
 }
 
-export default RefundPolicy
+export default RefundPolicy;

@@ -20,4 +20,4 @@ const ShippingPolicy = () => {
   )
 }
 
-export default ShippingPolicy
+export default ShippingPolicy;

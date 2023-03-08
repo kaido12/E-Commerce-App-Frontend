@@ -244,6 +244,7 @@ a {
 /* Product Card */
 .product-card {
   padding: 15px;
+  width: 97%;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(254, 252, 253) 0.1%, rgba(249, 245, 248, 0.795) 90.1% );
   border-radius: 15px;
   overflow: hidden;
@@ -437,12 +438,14 @@ a {
 
 .col-6 .product-card {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  width: 98%;
 }
 
 .col-12 .product-card {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  width: 99%;
 }
 
 .col-6 .product-card .product-image {
