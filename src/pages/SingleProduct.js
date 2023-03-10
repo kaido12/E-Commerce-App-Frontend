@@ -3,6 +3,9 @@ import { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import ReactImageZoom from 'react-image-zoom';
+import Colour from "../components/Colour";
+import { BsHeart } from "react-icons/bs";
+import { VscGitCompare } from "react-icons/vsc"; 
 
 const SingleProduct = () => {
   const [orderedProduct, setOrderedProduct] = useState(true);
@@ -42,9 +45,75 @@ const SingleProduct = () => {
             </div>
             <div className="col-6">
               <div className="main-product-details">
-                <div className="border-bottom">
-                  <h3>boAt Rockerz 370 On Ear Bluetooth Headphones</h3>
+                <div className="border-bottom d-flex">                
+                  <h3 className="title">boAt Rockerz 370 On Ear Bluetooth Headphones</h3>                
+                  <span className="d-flex flex-column mx-4 align-items-end justify-content-end">
+                    <a className="d-flex align-items-center mb-1" href=""><VscGitCompare className="me-1" /> {""}Compare</a>
+                    <a href="" className="mb-2"><BsHeart className="me-1" /> Wishlist</a>
+                  </span>                
                 </div>
+                <div className="border-bottom py-2">
+                  <div className="d-flex align-items-center gap-10 mb-0">
+                    <ReactStars
+                      count={5}
+                      size={24}
+                      value={4}
+                      edit={false}
+                      activeColor="#ffd700"
+                    />
+                    <p className="mb-0 t-review">2 Reviews</p>                  
+                    <h4 className="price mx-5">₹ 1299</h4>                    
+                  </div>
+                  <div>
+                    <a href="#review" className="review-btn">
+                      Write a Review
+                    </a>
+                  </div>
+                </div>
+                <div className="border-bottom ">
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Type :</h3>
+                    <p className="product-data">Headphone</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Brand :</h3>
+                    <p className="product-data">Boat</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Tags :</h3>
+                    <p className="product-data">Headphone, Headset, On-Ear-Earphone</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Availability :</h3>
+                    <p className="product-data">In Stock</p>
+                  </div>
+                  <div className="d-flex gap-10 flex-column my-2">
+                    <h3 className="product-heading">Size :</h3>
+                    <div className="d-flex flex-wrap gap-10">
+                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">S</span>
+                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">M</span>
+                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">L</span>
+                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">XL</span>
+                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">XXL</span>
+
+                    </div>
+                  </div>
+                  <div className="d-flex flex-column gap-10 my-2">
+                    <h3 className="product-heading">Colour :</h3>
+                    <Colour  />
+                  </div>
+                  <div className="d-flex gap-10 mb-2 align-items-center">
+                    <h3 className="product-heading">Quantity :</h3>
+                    <div>
+                      <input type="number" min={1} max={10} className="form-control" name="" id="" style={{width: "70px"}} />
+                    </div>
+                    <div className="d-flex align-items-center ms-4 gap-20">
+                      <button className="bttn text-white border-0 rounded-5 ">Add To Card</button>
+                      <button to="/signup" className="signup text-white rounded-5">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -70,7 +139,7 @@ const SingleProduct = () => {
           <div className="row">
             <div className="col-12">
             <h3>Reviews</h3>
-              <div className="review-inner-wrapper">
+              <div id="review" className="review-inner-wrapper">
                 <div className="review-head d-flex justify-content-between align-items-end">
                   <div>
                     <h4 className="mb-2">Customer Reviews</h4>

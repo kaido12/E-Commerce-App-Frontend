@@ -51,7 +51,9 @@ a {
 .red-400{
   color: #F43336;
 }
-
+.border-bottom {
+  border-bottom: 1px solid rgba(0,0,0, 0.25);
+}
 .card-wrapper {
   background-color: #fafaff;
   background-image: linear-gradient(334deg, #fafaff 0%, #f0f0f0 66%, #ffffff 100%);
@@ -596,6 +598,7 @@ a {
   padding: 10px 15px;
   font-size: 14px;
   font-weight: 400;
+  border: none
 }
 .signup:hover {
   background-color: #ecb101;
@@ -616,22 +619,49 @@ a {
 .main-product-image > div {
   border: 1px solid rgba(0,0,0, 0.25);
 }
-
 .main-product-image img {
   width: 100% !important;
   height: 500px !important;
   object-fit: cover;
 }
 .main-product-image .js-image-zoom__zoomed-image {
-  left: 100px !important;
+  left: 81px !important;
   padding: 10px;
   background-color: white;
   border-radius: 15px;
+  z-index: 100;
 }
 .main-product-details {
   padding: 20px;
   background-color: white;
   border-radius: 15px;
+}
+.main-product-details h4.price {
+  font-size: 18px;
+  color: var(--color-main)
+}
+.main-product-details a {
+  font-size: 15px;
+  color: var(--color-dark-gray);
+}
+.main-product-details h3.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-price);
+}
+.main-product-details a.review-btn, .t-review {
+  color: var(--color-dark-gray);
+  font-size: 15px;
+}
+.product-heading {
+  font-size: 15px;
+  color: var(--color-price);
+  margin-bottom: 0px;
+}
+.product-data {
+  font-size: 14px;
+  color: var(--color-dark-gray);
+  margin-bottom: 0px;
 }
 .adjacent-product-images {
   background-color: white;
