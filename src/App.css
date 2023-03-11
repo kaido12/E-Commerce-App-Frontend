@@ -614,7 +614,7 @@ a {
 .main-product-image {
   padding: 20px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
 }
 .main-product-image > div {
   border: 1px solid rgba(0,0,0, 0.25);
@@ -666,11 +666,13 @@ a {
 .adjacent-product-images {
   background-color: white;
   padding: 20px;
+  border-radius: 0px 0px 15px 15px;
 }
 .adjacent-product-images > div {
   border: 1px solid rgba(0,0,0, 0.25);
-  padding: 20px;
-  width: 48%;
+  border-radius: 10px;
+  padding: 5px;
+  width: 22.8%;
 }
 
 .description-wrapper h4, .reviews-wrapper h3 {
@@ -715,9 +717,8 @@ a {
   color: var(--color-dark-gray);
 }
 .accordion-item .accordion-button  {
-  background-color: white;
-  
-  padding: 15px 0px;
+  background-color: white;  
+  padding: 15px 25px 15px 0px;
 }
 .accordion-button h3 {
   font-size: 15px;
@@ -735,6 +736,9 @@ button.accordion-button::after {
 }
 .accordion-item {
   border: none;
+}
+.image-link-box {
+  padding: 6px 0px;
 }
 .image-link-box a.image-link {
   font-size: 13px;

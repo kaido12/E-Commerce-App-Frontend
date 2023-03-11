@@ -181,15 +181,15 @@ const SingleProduct = () => {
                   </div>
                 </div>
                 <div className="border-bottom">
-                  <div className="accordion" id="accordionExample">
+                  <div className="accordion mb-2" id="accordionExample">
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className="accordion-button"
+                          className="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseOne"
-                          aria-expanded="true"
+                          aria-expanded="false"
                           aria-controls="collapseOne"
                         >
                           <h3>Shipping & Returns</h3>
@@ -197,7 +197,7 @@ const SingleProduct = () => {
                       </h2>
                       <div
                         id="collapseOne"
-                        className="accordion-collapse collapse show"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
@@ -210,11 +210,11 @@ const SingleProduct = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className="accordion-button"
+                          className="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseTwo"
-                          aria-expanded="true"
+                          aria-expanded="false"
                           aria-controls="collapseTwo"
                         >
                           <h3>About Item</h3>
@@ -222,7 +222,7 @@ const SingleProduct = () => {
                       </h2>
                       <div
                         id="collapseTwo"
-                        className="accordion-collapse collapse show"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
@@ -241,11 +241,11 @@ const SingleProduct = () => {
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className="accordion-button "
+                          className="accordion-button collapsed "
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseThree"
-                          aria-expanded="true"
+                          aria-expanded="false"
                           aria-controls="collapseThree"
                         >
                           <h3>In Box</h3>
@@ -253,7 +253,7 @@ const SingleProduct = () => {
                       </h2>
                       <div
                         id="collapseThree"
-                        className="accordion-collapse collapse show"
+                        className="accordion-collapse collapse"
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                       >
@@ -275,7 +275,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-      <div className="description-wrapper px-5 py-5 home-wrapper-3">
+      <div className="description-wrapper px-5 home-wrapper-3">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
