@@ -744,3 +744,26 @@ button.accordion-button::after {
   font-size: 13px;
   color: var(--color-dark-gray);
 }
+
+/* CART PAGE */
+.cart-header {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.cart-header h4 {
+  font-size: 15px;
+  color: var(--color-price);
+  padding: 0px 20px;
+}
+.cart-col-1 {
+  width: 40%;
+}
+.cart-col-1 {
+  width: 10%;
+}
+.cart-col-1 {
+  width: 15%;
+}
+.cart-col-1 {
+  width: 15%;
+}
