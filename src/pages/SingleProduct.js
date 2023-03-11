@@ -2,15 +2,34 @@ import React from "react";
 import { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
-import ReactImageZoom from 'react-image-zoom';
+import ReactImageZoom from "react-image-zoom";
 import Colour from "../components/Colour";
 import { BsHeart } from "react-icons/bs";
-import { VscGitCompare } from "react-icons/vsc"; 
+import { VscGitCompare } from "react-icons/vsc";
+import { FiLink } from "react-icons/fi";
 
 const SingleProduct = () => {
+  
   const [orderedProduct, setOrderedProduct] = useState(true);
 
-  const props = {width: 400, height: 500, zoomWidth: 500, img: "https://m.media-amazon.com/images/I/61kWB+uzR2L._SL1500_.jpg"};
+  const imageLink = "https://m.media-amazon.com/images/I/61kWB+uzR2L._SL1500_.jpg"
+
+  const copyToClipboard = (text) => {
+    console.log('text', text)
+    var textField = document.createElement('textarea')
+    textField.innerText = text
+    document.body.appendChild(textField)
+    textField.select()
+    document.execCommand('copy')
+    textField.remove()
+  }
+
+  const props = {
+    width: 400,
+    height: 500,
+    zoomWidth: 500,
+    img: imageLink,
+  };
 
   const ratingChanged = (newRating) => {
     return newRating;
@@ -26,31 +45,53 @@ const SingleProduct = () => {
               <div className="main-product-image">
                 <div>
                   <ReactImageZoom {...props} />
-                </div>   
+                </div>
               </div>
               <div className="adjacent-product-images d-flex flex-wrap gap-15">
                 <div>
-                  <img src="https://m.media-amazon.com/images/I/61+paS1uwjL._SL1500_.jpg" alt="" className="img-fluid" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/61+paS1uwjL._SL1500_.jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
                 </div>
                 <div>
-                  <img src="https://m.media-amazon.com/images/I/61I3R2ioAlL._SL1500_.jpg" alt="" className="img-fluid" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/61I3R2ioAlL._SL1500_.jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
                 </div>
                 <div>
-                  <img src="https://m.media-amazon.com/images/I/61KiBcIJfQL._SL1500_.jpg" alt="" className="img-fluid" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/61KiBcIJfQL._SL1500_.jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
                 </div>
                 <div>
-                  <img src="https://m.media-amazon.com/images/I/71y7U-eXyCL._SL1500_.jpg" alt="" className="img-fluid" />
+                  <img
+                    src="https://m.media-amazon.com/images/I/71y7U-eXyCL._SL1500_.jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
                 </div>
               </div>
             </div>
             <div className="col-6">
               <div className="main-product-details">
-                <div className="border-bottom d-flex">                
-                  <h3 className="title">boAt Rockerz 370 On Ear Bluetooth Headphones</h3>                
+                <div className="border-bottom d-flex">
+                  <h3 className="title">
+                    boAt Rockerz 370 On Ear Bluetooth Headphones
+                  </h3>
                   <span className="d-flex flex-column mx-4 align-items-end justify-content-end">
-                    <a className="d-flex align-items-center mb-1" href=""><VscGitCompare className="me-1" /> {""}Compare</a>
-                    <a href="" className="mb-2"><BsHeart className="me-1" /> Wishlist</a>
-                  </span>                
+                    <a className="d-flex align-items-center mb-1" href="">
+                      <VscGitCompare className="me-1" /> {""}Compare
+                    </a>
+                    <a href="" className="mb-2">
+                      <BsHeart className="me-1" /> Wishlist
+                    </a>
+                  </span>
                 </div>
                 <div className="border-bottom py-2">
                   <div className="d-flex align-items-center gap-10 mb-0">
@@ -61,8 +102,8 @@ const SingleProduct = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <p className="mb-0 t-review">2 Reviews</p>                  
-                    <h4 className="price mx-5">₹ 1299</h4>                    
+                    <p className="mb-0 t-review">2 Reviews</p>
+                    <h4 className="price mx-5">₹ 1299</h4>
                   </div>
                   <div>
                     <a href="#review" className="review-btn">
@@ -77,11 +118,13 @@ const SingleProduct = () => {
                   </div>
                   <div className="d-flex gap-10 align-items-center my-2">
                     <h3 className="product-heading">Brand :</h3>
-                    <p className="product-data">Boat</p>
+                    <p className="product-data">boAt</p>
                   </div>
                   <div className="d-flex gap-10 align-items-center my-2">
                     <h3 className="product-heading">Tags :</h3>
-                    <p className="product-data">Headphone, Headset, On-Ear-Earphone</p>
+                    <p className="product-data">
+                      Headphone, Headset, On-Ear-Earphone
+                    </p>
                   </div>
                   <div className="d-flex gap-10 align-items-center my-2">
                     <h3 className="product-heading">Availability :</h3>
@@ -90,30 +133,143 @@ const SingleProduct = () => {
                   <div className="d-flex gap-10 flex-column my-2">
                     <h3 className="product-heading">Size :</h3>
                     <div className="d-flex flex-wrap gap-10">
-                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">S</span>
-                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">M</span>
-                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">L</span>
-                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">XL</span>
-                    <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">XXL</span>
-
+                      <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">
+                        S
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">
+                        M
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">
+                        L
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">
+                        XL
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-primary-subtle fs-6">
+                        XXL
+                      </span>
                     </div>
                   </div>
                   <div className="d-flex flex-column gap-10 my-2">
                     <h3 className="product-heading">Colour :</h3>
-                    <Colour  />
+                    <Colour />
                   </div>
                   <div className="d-flex gap-10 mb-2 align-items-center">
                     <h3 className="product-heading">Quantity :</h3>
                     <div>
-                      <input type="number" min={1} max={10} className="form-control" name="" id="" style={{width: "70px"}} />
+                      <input
+                        type="number"
+                        min={1}
+                        max={10}
+                        className="form-control"
+                        name=""
+                        id=""
+                        style={{ width: "70px" }}
+                      />
                     </div>
                     <div className="d-flex align-items-center ms-4 gap-20">
-                      <button className="bttn text-white border-0 rounded-5 ">Add To Card</button>
-                      <button to="/signup" className="signup text-white rounded-5">Buy Now</button>
+                      <button className="bttn text-white border-0 rounded-5 ">
+                        Add To Card
+                      </button>
+                      <button
+                        to="/signup"
+                        className="signup text-white rounded-5"
+                      >
+                        Buy Now
+                      </button>
                     </div>
                   </div>
                 </div>
-
+                <div className="border-bottom">
+                  <div className="accordion" id="accordionExample">
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingOne">
+                        <button
+                          className="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          <h3>Shipping & Returns</h3>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        className="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <p>Free shipping available on orders above ₹ 1000 and free return on all orders.
+                          We ship domestic orders within 5-9 business days. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingOne">
+                        <button
+                          className="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="true"
+                          aria-controls="collapseTwo"
+                        >
+                          <h3>About Item</h3>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        className="accordion-collapse collapse show"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <p>
+                            Rockerz 370 come equipped with latest Bluetooth v5.0 for instant wireless connectivity.
+                            The powerful 300mAh battery provides up to 8 Hours of audio bliss.
+                            40mm Dynamic Drivers supply immersive High Definition sound.
+                            The headset has padded earcups for a comfortable experience.
+                            One can connect to Rockerz 370 via dual modes for connectivity in the form of Bluetooth and AUX.
+                            The headphone has been ergonomically and aesthetically designed for a seamless experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item">
+                      <h2 className="accordion-header" id="headingOne">
+                        <button
+                          className="accordion-button "
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="true"
+                          aria-controls="collapseThree"
+                        >
+                          <h3>In Box</h3>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        className="accordion-collapse collapse show"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div className="accordion-body">
+                          <p>Micro USB Charging Cable, Warranty Card, User Manual</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="border-bottom image-link-box">
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <a href="javascript:void(0)" className="image-link" onClick={() =>{copyToClipboard(imageLink)}}><FiLink /> Copy Link</a>
+                    
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -138,7 +294,7 @@ const SingleProduct = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-            <h3>Reviews</h3>
+              <h3>Reviews</h3>
               <div id="review" className="review-inner-wrapper">
                 <div className="review-head d-flex justify-content-between align-items-end">
                   <div>

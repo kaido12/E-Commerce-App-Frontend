@@ -714,3 +714,29 @@ a {
   font-size: 14px;
   color: var(--color-dark-gray);
 }
+.accordion-item .accordion-button  {
+  background-color: white;
+  
+  padding: 15px 0px;
+}
+.accordion-button h3 {
+  font-size: 15px;
+  color: var(--color-price);
+  margin-bottom: 0px;
+}
+.accordion-button::collapse {
+  color: black;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+button.accordion-button::after {
+  color: var(--color-dark-gray);
+}
+.accordion-item {
+  border: none;
+}
+.image-link-box a.image-link {
+  font-size: 13px;
+  color: var(--color-dark-gray);
+}
