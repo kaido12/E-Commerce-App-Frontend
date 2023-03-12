@@ -157,6 +157,9 @@ a {
 }
 
 /* Home-Wrapper-2 */
+.home-wrapper-1 {
+  background-color: white;
+}
 .home-wrapper-2 {
   background-color: var(--color-gray);
 }
