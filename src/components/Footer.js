@@ -94,7 +94,7 @@ const Footer = () => {
                 <Link to="/blog" className="text-white py-2 mb-1">Blogs</Link>
                 <Link to="/privacy-policy" className="text-white py-2 mb-1">Privacy Policy</Link>
                 <Link to="/refund-policy" className="text-white py-2 mb-1">Refund Policy</Link>
-                <Link to="/shipping-policy" className="text-white py-2 mb-1">Shipping Policy</Link>
+                <Link to="/delivery-policy" className="text-white py-2 mb-1">Delivery Policy</Link>
                 <Link to="/terms-and-conditions" className="text-white py-2 mb-1">
                   Terms and Conditions
                 </Link>

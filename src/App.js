@@ -15,7 +15,7 @@ import ResetPassword from "./pages/ResetPassword";
 import SingleBlog from "./pages/SingleBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
-import ShippingPolicy from "./pages/ShippingPolicy";
+import DeliveryPolicy from "./pages/DeliveryPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
@@ -44,7 +44,7 @@ function App() {
             <Route  path="/reset-password" element={<ResetPassword />} />
             <Route  path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route  path="/refund-policy" element={<RefundPolicy />} />
-            <Route  path="/shipping-policy" element={<ShippingPolicy />} />
+            <Route  path="/delivery-policy" element={<DeliveryPolicy />} />
             <Route  path="/terms-and-conditions" element={<TermsAndConditions />} />
           </Route>
         </Routes>

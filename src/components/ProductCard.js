@@ -17,9 +17,9 @@ const ProductCard = ({grid}) => {
       <div className={`${location.pathname === "/store" ? `col-${grid}`: "col-2"}`}>        
         <Link to='/store/:id' className="product-card position-relative">
               <div className="wishlist-icon position-absolute">
-                <Link>
+                <button className='border-0 bg-transparent'>
                   <img src="./images/wish.svg" alt="wishlist" />
-                </Link>
+                </button>
               </div>
               <div className="product-image d-flex align-items-center justify-content-center">
                 <img src="./images/product_01.png" alt="product" />
@@ -46,15 +46,15 @@ const ProductCard = ({grid}) => {
               </div>
               <div className="side-bar position-absolute">
                 <div className="d-flex flex-column gap-15">
-                  <Link>
+                  <button className='border-0 bg-transparent'>
                     <img src="./images/view.svg" alt="view" />
-                  </Link>
-                  <Link>
+                  </button>
+                  <button className='border-0 bg-transparent'>
                     <img src="./images/add-cart.svg" alt="addcart" />
-                  </Link>
-                  <Link>
+                  </button>
+                  <button className='border-0 bg-transparent'>
                     <img src="./images/prodcompare.svg" alt="view" />
-                  </Link>
+                  </button>
                 </div>
               </div>
         </Link>
