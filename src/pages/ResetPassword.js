@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
+import CustomInput from "../components/CustomInput";
 // import BreadCrumb from "../components/BreadCrumb";
 
 const ResetPassword = () => {
@@ -12,22 +13,17 @@ const ResetPassword = () => {
           <div className="auth-card">
             <h3 className="text-center mb-3">Reset Password</h3>
             <form action="" className="d-flex flex-column gap-10">
-              <div>
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  className="form-control"
-                />
-              </div>
-              <div>
-                <input
-                  type="password"
-                  name="confirm password"
-                  placeholder=" Confirm Password"
-                  className="form-control"
-                />
-              </div>
+              <CustomInput
+                type="password"
+                name="new-password"
+                placeholder="New Password"
+              />
+              <CustomInput
+                type="password"
+                name="confirm-password"
+                placeholder="Confirm Password"
+              />
+
               <div>
                 <div className="d-flex mt-2 flex-column justify-content-center align-items-center gap-20">
                   <button

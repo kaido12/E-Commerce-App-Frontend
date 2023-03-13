@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
+import CustomInput from "../components/CustomInput";
 // import BreadCrumb from "../components/BreadCrumb";
 
 const SignIn = () => {
@@ -12,22 +13,13 @@ const SignIn = () => {
           <div className="auth-card">
             <h3 className="text-center mb-3">Sign In</h3>
             <form action="" className="d-flex flex-column gap-10">
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  className="form-control"
-                />
-              </div>
-              <div className="mt-1">
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  className="form-control"
-                />
-              </div>
+              <CustomInput type="email" name="email" placeholder="Email" />
+              <CustomInput
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+
               <div>
                 <Link to="/forgot-password" className="mt-1 mb-1">
                   Forgot Password

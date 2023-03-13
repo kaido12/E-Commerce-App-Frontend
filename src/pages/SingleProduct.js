@@ -51,28 +51,28 @@ const SingleProduct = () => {
               <div>
                 <img
                   src="https://m.media-amazon.com/images/I/61+paS1uwjL._SL1500_.jpg"
-                  alt=""
+                  alt="more-product"
                   className="img-fluid"
                 />
               </div>
               <div>
                 <img
                   src="https://m.media-amazon.com/images/I/61I3R2ioAlL._SL1500_.jpg"
-                  alt=""
+                  alt="more-product"
                   className="img-fluid"
                 />
               </div>
               <div>
                 <img
                   src="https://m.media-amazon.com/images/I/61KiBcIJfQL._SL1500_.jpg"
-                  alt=""
+                  alt="more-product"
                   className="img-fluid"
                 />
               </div>
               <div>
                 <img
                   src="https://m.media-amazon.com/images/I/71y7U-eXyCL._SL1500_.jpg"
-                  alt=""
+                  alt="more-product"
                   className="img-fluid"
                 />
               </div>
