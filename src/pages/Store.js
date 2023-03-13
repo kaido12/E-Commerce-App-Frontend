@@ -242,7 +242,7 @@ const Store = () => {
                   </select>
                 </div>
                 <div className="d-flex align-items-center gap-10 ">
-                  <p className="totalproducts mb-0 me-2">30 Products</p>
+                  <p className="totalproducts mb-0 me-2">15 Products</p>
                   <div className="d-flex gap-15 align-items-center grid-img">
                     <img
                       onClick={() => setGrid(12)}
