@@ -8,6 +8,7 @@ import { BsHeart } from "react-icons/bs";
 import { VscGitCompare } from "react-icons/vsc";
 import { FiLink } from "react-icons/fi";
 import Container from "../components/Container";
+import ProdBlock from "../components/ProdBlock";
 
 const SingleProduct = () => {
   const [orderedProduct] = useState(true);
@@ -395,6 +396,19 @@ const SingleProduct = () => {
               </div>
             </div>
           </div>
+        </div>
+      </Container>
+      <Container classlabel="products-wrapper home-wrapper-2 pt-1 pb-2 px-5">
+        <div className="row">
+          <div className="col-12">
+            <h3 className="section-heading">You may also like</h3>
+          </div>
+          <ProdBlock />
+          <ProdBlock />
+          <ProdBlock />
+          <ProdBlock />
+          <ProdBlock />
+          <ProdBlock />
         </div>
       </Container>
     </>

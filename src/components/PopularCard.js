@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
+import wish  from "../images/wish.svg";
+import product01  from "../images/product_01.png";
+import product02 from "../images/product_02.png";
 
 const ProductCard = () => {
 
@@ -13,12 +16,12 @@ const ProductCard = () => {
         <Link to='/store/:id' className="product-card position-relative">
             <div className="wishlist-icon position-absolute">
               <button className='border-0 bg-transparent'>
-                <img src="./images/wish.svg" alt="wishlist" />
+                <img src={wish} alt="wishlist" />
               </button>
             </div>
             <div className="product-image d-flex align-items-center justify-content-center">
-              <img src="./images/product_01.png" height={110} alt="product" />
-              <img src="./images/product_02.png" height={110} alt="product" />
+              <img src={product01} height={110} alt="product" />
+              <img src={product02} height={110} alt="product" />
             </div>
             <div className="product-details">
               <h6 className="brand">Sony</h6>              

@@ -1,6 +1,8 @@
 import React from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Container from "../components/Container";
+import cross from "../images/cross.svg";
+import tablet from "../images/tablet.jpg";
 
 const Wishlist = () => {
   return (
@@ -11,12 +13,12 @@ const Wishlist = () => {
           <div className="col-3">
             <div className="wishlist-card position-relative">
               <img
-                src="./images/cross.svg"
+                src={cross}
                 alt="cross"
                 className="cross position-absolute img-fluid"
               />
               <div className="wishlist-card-image d-flex justify-content-center">
-                <img src="./images/tablet.jpg" height={200} alt="tablet" />
+                <img src={tablet} height={200} alt="tablet" />
               </div>
               <div className="wishlist-details">
                 <h5 className="title">
@@ -29,12 +31,12 @@ const Wishlist = () => {
           <div className="col-3">
             <div className="wishlist-card position-relative">
               <img
-                src="./images/cross.svg"
+                src={cross}
                 alt="cross"
                 className="cross position-absolute img-fluid"
               />
               <div className="wishlist-card-image d-flex justify-content-center">
-                <img src="./images/tablet.jpg" height={200} alt="tablet" />
+                <img src={tablet} height={200} alt="tablet" />
               </div>
               <div className="wishlist-details">
                 <h5 className="title">
@@ -47,12 +49,12 @@ const Wishlist = () => {
           <div className="col-3">
             <div className="wishlist-card position-relative">
               <img
-                src="./images/cross.svg"
+                src={cross}
                 alt="cross"
                 className="cross position-absolute img-fluid"
               />
               <div className="wishlist-card-image d-flex justify-content-center">
-                <img src="./images/tablet.jpg" height={200} alt="tablet" />
+                <img src={tablet} height={200} alt="tablet" />
               </div>
               <div className="wishlist-details">
                 <h5 className="title">

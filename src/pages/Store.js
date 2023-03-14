@@ -4,6 +4,14 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
 import Colour from "../components/Colour";
 import Container from "../components/Container";
+import watch from "../images/watch.jpg";
+import gaming from "../images/gaming.jpg";
+import bike from "../images/bike.jpg";
+import pattern_01 from "../images/gr1.svg";
+import pattern_02 from "../images/gr2.svg";
+import pattern_03 from "../images/gr3.svg";
+import pattern_04 from "../images/gr4.svg";
+
 
 const Store = () => {
   const [grid, setGrid] = useState(4);
@@ -154,7 +162,7 @@ const Store = () => {
                 <div className="random-product d-flex">
                   <div className="image-width-1">
                     <img
-                      src="images/watch.jpg"
+                      src={watch}
                       height={30}
                       className="img-fluid px-2"
                       alt="watch"
@@ -176,7 +184,7 @@ const Store = () => {
                 <div className="random-product d-flex">
                   <div className="image-width-1">
                     <img
-                      src="images/gaming.jpg"
+                      src={gaming}
                       height={30}
                       className="img-fluid px-2"
                       alt="watch"
@@ -198,7 +206,7 @@ const Store = () => {
                 <div className="random-product d-flex">
                   <div className="image-width-1">
                     <img
-                      src="images/bike.jpg"
+                      src={bike}
                       height={50}
                       className="img-fluid px-2"
                       alt="bike"
@@ -246,26 +254,26 @@ const Store = () => {
                   <div className="d-flex gap-15 align-items-center grid-img">
                     <img
                       onClick={() => setGrid(12)}
-                      src="./images/gr.svg"
-                      alt=""
+                      src={pattern_01}
+                      alt="pattern"
                       className="d-block img-fluid"
                     />
                     <img
                       onClick={() => setGrid(6)}
-                      src="./images/gr2.svg"
-                      alt=""
+                      src={pattern_02}
+                      alt="pattern"
                       className="d-block img-fluid"
                     />
                     <img
                       onClick={() => setGrid(4)}
-                      src="./images/gr3.svg"
-                      alt=""
+                      src={pattern_03}
+                      alt="pattern"
                       className="d-block img-fluid"
                     />
                     <img
                       onClick={() => setGrid(3)}
-                      src="./images/gr4.svg"
-                      alt=""
+                      src={pattern_04}
+                      alt="pattern"
                       className="d-block img-fluid me-1"
                     />
                   </div>

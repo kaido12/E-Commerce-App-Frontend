@@ -4,6 +4,9 @@ import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import Container from "../components/Container";
+import boat_headphone from "../images/boat-headphone.jpg";
+import product_bose from "../images/bose.jpg";
+
 
 const Cart = () => {
   return (
@@ -22,7 +25,7 @@ const Cart = () => {
               <div className="cart-col-1 gap-15 d-flex align-items-center ">
                 <div className="w-25">
                   <img
-                    src="./images/boat-headphone.jpg"
+                    src={boat_headphone}
                     className="img-fluid"
                     alt="product"
                   />
@@ -59,7 +62,7 @@ const Cart = () => {
               <div className="cart-col-1 gap-15 d-flex align-items-center ">
                 <div className="w-25">
                   <img
-                    src="./images/bose.jpg"
+                    src={product_bose}
                     className="img-fluid"
                     alt="product"
                   />

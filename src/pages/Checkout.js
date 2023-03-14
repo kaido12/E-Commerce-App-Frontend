@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa";
 import Container from "../components/Container";
+import boat_headphone from "../images/boat-headphone.jpg";
+import product_bose from "../images/bose.jpg";
 
 const Checkout = () => {
   return (
@@ -124,7 +126,7 @@ const Checkout = () => {
             </div>
           </div>
           <div className="col-5">
-            <div className="border-bottom py-4">
+            <div className="border-bottom py-2">
               <div className="d-flex gap-10 align-items-center">
                 <div className="w-75 d-flex gap-10">
                   <div className="w-25 position-relative">
@@ -135,18 +137,44 @@ const Checkout = () => {
                       1
                     </span>
                     <img
-                      src="./images/boat-headphone.jpg"
+                      src= {boat_headphone}
                       className="img-fluid"
                       alt="product"
                     />
                   </div>
                   <div>
                     <h6 className="title mb-0">boAt Headphone</h6>
-                    <p className="total">hey</p>
+                    <p className="total">green</p>
                   </div>
                 </div>
                 <div className="d-flex flex-grow-1 justify-content-between align-items-center">
                   <h5 className="total-price text-end">₹ 1299</h5>
+                </div>
+              </div>
+            </div>
+            <div className="border-bottom py-2">
+              <div className="d-flex gap-10 align-items-center">
+                <div className="w-75 d-flex gap-10">
+                  <div className="w-25 position-relative">
+                    <span
+                      style={{ top: "-8px", right: "2px" }}
+                      className="badge bg-secondary text-white rounded-circle position-absolute"
+                    >
+                      1
+                    </span>
+                    <img
+                      src= {product_bose}
+                      className="img-fluid"
+                      alt="product"
+                    />
+                  </div>
+                  <div>
+                    <h6 className="title mb-0">Bose Speaker</h6>
+                    <p className="total">black</p>
+                  </div>
+                </div>
+                <div className="d-flex flex-grow-1 justify-content-between align-items-center">
+                  <h5 className="total-price text-end">₹ 32500</h5>
                 </div>
               </div>
             </div>

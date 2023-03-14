@@ -7,6 +7,33 @@ import PopularCard from "../components/PopularCard";
 import SpecialCard from "../components/SpecialCard";
 import services from "../utils/Data";
 import Container from "../components/Container";
+import main_banner  from "../images/banner.jpg";
+import side_banner02  from "../images/catbanner-02.jpg";
+import side_banner01  from "../images/catbanner-01.jpg";
+import side_banner04  from "../images/catbanner-04.jpg";
+import side_banner03  from "../images/catbanner-03.jpg";
+import tv  from "../images/tv.jpg";
+import mobile  from "../images/mobile.jpg";
+import camera  from "../images/camera.jpg";
+import headphone  from "../images/headphones.jpg";
+import laptop  from "../images/laptop.jpg";
+import gaming  from "../images/gaming.jpg";
+import speaker  from "../images/speakers.jpg";
+import watch  from "../images/watch.jpg";
+import apple_series_8 from "../images/apple-series-8.jpg";
+import apple_iphone_14 from "../images/apple-iphone-14.jpg";
+import apple_homepod_mini from "../images/apple-homepod-mini.jpg";
+import apple_macbook_pro from "../images/apple-macbook-pro.jpg";
+import brand01 from "../images/brand_01.png"
+import brand02 from "../images/brand_02.png"
+import brand03 from "../images/brand_03.png"
+import brand04 from "../images/brand_04.png"
+import brand05 from "../images/brand_05.png"
+import brand06 from "../images/brand_06.png"
+import brand07 from "../images/brand_07.png"
+import brand08 from "../images/brand_08.png"
+import brand09 from "../images/brand_09.png"
+
 
 const Home = () => {
   return (
@@ -16,7 +43,7 @@ const Home = () => {
           <div className="col-6 position-relative">
             <div className="banner p-1 object-fit-contain">
               <img
-                src="./images/banner.jpg"
+                src={main_banner}
                 alt="main banner"
                 className="img-fluid rounded-3"
               />
@@ -39,7 +66,7 @@ const Home = () => {
             <div className="d-flex flex-column position-relative justify-content-between">
               <div className="small-banner position-relaive p-1 pb-3">
                 <img
-                  src="./images/catbanner-02.jpg"
+                  src={side_banner02}
                   alt="main banner"
                   className="img-fluid rounded-3"
                 />
@@ -56,7 +83,7 @@ const Home = () => {
             <div className="d-flex flex-wrap position-relative justify-content-between">
               <div className="small-banner position-relaive p-1 pb-3">
                 <img
-                  src="./images/catbanner-01.jpg"
+                  src={side_banner01}
                   alt="main banner"
                   className="img-fluid rounded-3"
                 />
@@ -75,7 +102,7 @@ const Home = () => {
             <div className="d-flex flex-wrap position-relative justify-content-between">
               <div className="small-banner position-relaive p-1 pb-3">
                 <img
-                  src="./images/catbanner-04.jpg"
+                  src={side_banner04}
                   alt="main banner"
                   className="img-fluid rounded-3"
                 />
@@ -92,7 +119,7 @@ const Home = () => {
             <div className="d-flex flex-wrap position-relative justify-content-between">
               <div className="small-banner position-relaive p-1 pb-3">
                 <img
-                  src="./images/catbanner-03.jpg"
+                  src={side_banner03}
                   alt="main banner"
                   className="img-fluid rounded-3"
                 />
@@ -148,7 +175,7 @@ const Home = () => {
                   <h6>Android TVs</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="./images/tv.jpg" alt="" width={120} height={100} />
+                <img src={tv} alt="" width={120} height={100} />
               </div>
               <div className="d-flex align-items-center">
                 <div>
@@ -156,7 +183,7 @@ const Home = () => {
                   <p>10 Items</p>
                 </div>
                 <img
-                  src="./images/mobile.jpg"
+                  src={mobile}
                   alt=""
                   width={120}
                   height={100}
@@ -168,7 +195,7 @@ const Home = () => {
                   <p>10 Items</p>
                 </div>
                 <img
-                  src="./images/camera.jpg"
+                  src={camera}
                   alt=""
                   width={120}
                   height={100}
@@ -180,7 +207,7 @@ const Home = () => {
                   <p>10 Items</p>
                 </div>
                 <img
-                  src="./images/headphones.jpg"
+                  src={headphone}
                   alt=""
                   width={120}
                   height={100}
@@ -192,7 +219,7 @@ const Home = () => {
                   <p>10 Items</p>
                 </div>
                 <img
-                  src="./images/laptop.jpg"
+                  src={laptop}
                   alt=""
                   width={120}
                   height={100}
@@ -204,7 +231,7 @@ const Home = () => {
                   <p>10 Items</p>
                 </div>
                 <img
-                  src="./images/gaming.jpg"
+                  src={gaming}
                   alt=""
                   width={120}
                   height={100}
@@ -216,7 +243,7 @@ const Home = () => {
                   <p>10 Items</p>
                 </div>
                 <img
-                  src="./images/speakers.jpg"
+                  src={speaker}
                   alt=""
                   width={120}
                   height={100}
@@ -227,7 +254,7 @@ const Home = () => {
                   <h6>Watches</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="./images/watch.jpg" alt="" width={120} height={100} />
+                <img src={watch} alt="" width={120} height={100} />
               </div>
             </div>
           </div>
@@ -270,7 +297,7 @@ const Home = () => {
           <div className="col-3">
             <div className="smart-card position-relative">
               <img
-                src="./images/apple-series-8.jpg"
+                src={apple_series_8}
                 className="img-fluid"
                 width={300}
                 alt="smart"
@@ -285,7 +312,7 @@ const Home = () => {
           <div className="col-3">
             <div className="smart-card position-relative">
               <img
-                src="./images/apple-iphone-14.jpg"
+                src={apple_iphone_14}
                 className="img-fluid"
                 width={300}
                 alt="smart"
@@ -300,7 +327,7 @@ const Home = () => {
           <div className="col-3">
             <div className="smart-card position-relative">
               <img
-                src="./images/apple-homepod-mini.jpg"
+                src={apple_homepod_mini}
                 className="img-fluid"
                 width={300}
                 alt="smart"
@@ -315,7 +342,7 @@ const Home = () => {
           <div className="col-3">
             <div className="smart-card position-relative">
               <img
-                src="./images/apple-macbook-pro.jpg"
+                src={apple_macbook_pro}
                 className="img-fluid"
                 width={300}
                 alt="smart"
@@ -336,31 +363,31 @@ const Home = () => {
             <div className="marquee-inner-wrapper card-wrapper">
               <Marquee gradient={false} className="d-flex">
                 <div className="mx-3 w-30">
-                  <img height={40} src="./images/brand_01.png" alt="brand" />
+                  <img height={40} src={brand01} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={90} src="./images/brand_02.png" alt="brand" />
+                  <img height={90} src={brand02} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={90} src="./images/brand_03.png" alt="brand" />
+                  <img height={90} src={brand03} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={60} src="./images/brand_04.png" alt="brand" />
+                  <img height={60} src={brand04} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={60} src="./images/brand_05.png" alt="brand" />
+                  <img height={60} src={brand05} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={30} src="./images/brand_06.png" alt="brand" />
+                  <img height={30} src={brand06} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={90} src="./images/brand_07.png" alt="brand" />
+                  <img height={90} src={brand07} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={60} src="./images/brand_08.png" alt="brand" />
+                  <img height={60} src={brand08} alt="brand" />
                 </div>
                 <div className="mx-3 w-25">
-                  <img height={80} src="./images/brand_09.png" alt="brand" />
+                  <img height={80} src={brand09} alt="brand" />
                 </div>
               </Marquee>
             </div>

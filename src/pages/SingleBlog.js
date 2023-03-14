@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import { FaArrowLeft } from "react-icons/fa";
 import Container from "../components/Container";
+import blog_01 from "../images/blog_1.jpg";
 
 const SingleBlog = () => {
   return (
@@ -17,8 +18,8 @@ const SingleBlog = () => {
               </Link>
               <h3 className="title">A beautiful sunday evening glimpse</h3>
               <img
-                src="./images/blog_1.jpg"
-                className="img-fluid my-4 w-100"
+                src={blog_01}
+                className="img-fluid my-4 w-100 p-5"
                 alt="blog"
               />
               <p>

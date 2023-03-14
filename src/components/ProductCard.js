@@ -2,6 +2,12 @@ import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import wish  from "../images/wish.svg";
+import product01  from "../images/product_01.png";
+import product02 from "../images/product_02.png";
+import view from "../images/view.svg";
+import add_cart from "../images/add-cart.svg";
+import prodcompare from "../images/prodcompare.svg";
 
 const ProductCard = ({grid}) => {
 
@@ -18,12 +24,12 @@ const ProductCard = ({grid}) => {
         <Link to='/store/:id' className="product-card position-relative">
               <div className="wishlist-icon position-absolute">
                 <button className='border-0 bg-transparent'>
-                  <img src="./images/wish.svg" alt="wishlist" />
+                  <img src={wish} alt="wishlist" />
                 </button>
               </div>
               <div className="product-image d-flex align-items-center justify-content-center">
-                <img src="./images/product_01.png" alt="product" />
-                <img src="./images/product_02.png" alt="product" />
+                <img src={product01} alt="product" />
+                <img src={product02} alt="product" />
               </div>
               <div className="product-details">
                 <h6 className="brand">Sony</h6>              
@@ -47,13 +53,13 @@ const ProductCard = ({grid}) => {
               <div className="side-bar position-absolute">
                 <div className="d-flex flex-column gap-15">
                   <button className='border-0 bg-transparent'>
-                    <img src="./images/view.svg" alt="view" />
+                    <img src={view} alt="view" />
                   </button>
                   <button className='border-0 bg-transparent'>
-                    <img src="./images/add-cart.svg" alt="addcart" />
+                    <img src={add_cart} alt="addcart" />
                   </button>
                   <button className='border-0 bg-transparent'>
-                    <img src="./images/prodcompare.svg" alt="view" />
+                    <img src={prodcompare} alt="product-compare" />
                   </button>
                 </div>
               </div>

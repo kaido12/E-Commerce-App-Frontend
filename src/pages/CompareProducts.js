@@ -2,6 +2,8 @@ import React from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Colour from "../components/Colour";
 import Container from "../components/Container";
+import cross from "../images/cross.svg";
+import tablet from "../images/tablet.jpg";
 
 const CompareProducts = () => {
   return (
@@ -12,12 +14,12 @@ const CompareProducts = () => {
           <div className="col-3">
             <div className="compare-product-card position-relative">
               <img
-                src="./images/cross.svg"
+                src={cross}
                 alt="cross"
                 className="cross position-absolute img-fluid"
               />
               <div className="product-card-image d-flex justify-content-center ">
-                <img src="./images/tablet.jpg" height={200} alt="tablet" />
+                <img src={tablet} height={200} alt="tablet" />
               </div>
               <div className="compare-product-details">
                 <h5 className="title">
@@ -55,12 +57,12 @@ const CompareProducts = () => {
           <div className="col-3">
             <div className="compare-product-card position-relative">
               <img
-                src="./images/cross.svg"
+                src={cross}
                 alt="cross"
                 className="cross position-absolute img-fluid"
               />
               <div className="product-card-image d-flex justify-content-center ">
-                <img src="./images/tablet.jpg" height={200} alt="tablet" />
+                <img src={tablet} height={200} alt="tablet" />
               </div>
               <div className="compare-product-details">
                 <h5 className="title">

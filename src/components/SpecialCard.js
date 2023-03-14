@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
+import product_bose from "../images/bose.jpg";
 
 const SpecialCard = () => {
   return (
@@ -8,7 +9,7 @@ const SpecialCard = () => {
         <div className="special-product-card mb-4">
             <div className="d-flex justify-content-between">
                 <div>
-                    <img src="./images/bose.jpg" width={200} alt="specialproduct" />
+                    <img src={product_bose} width={200} alt="specialproduct" />
                 </div>
                 <div className="special-product-content d-flex flex-column">
                     <h5 className="brand">Bose</h5>
