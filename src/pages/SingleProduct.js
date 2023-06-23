@@ -169,8 +169,8 @@ const SingleProduct = () => {
                     />
                   </div>
                   <div className="d-flex align-items-center ms-4 gap-20">
-                    <button className="bttn text-white border-0 rounded-5 ">
-                      Add To Card
+                    <button to="/checkout" className="bttn text-white border-0 rounded-5 ">
+                      Add To Cart
                     </button>
                     <button
                       to="/signup"
